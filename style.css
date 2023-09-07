@@ -1,0 +1,31 @@
+.tid_container {
+  border: 1px solid black;
+  position: relative;
+  padding: 15px;
+  background: rgb(187, 187, 187, 0.2);
+}
+.tid {
+  background-color: rgb(187, 187, 187);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform-origin: left;
+}
+
+.time {
+  animation-name: time_kf;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes time_kf {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
